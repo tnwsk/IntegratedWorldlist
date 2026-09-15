@@ -3,6 +3,10 @@ name: Release Geode Mod
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   release:
     name: Release mod
