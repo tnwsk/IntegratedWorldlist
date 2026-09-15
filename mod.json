@@ -6,11 +6,11 @@
         "mac": "2.2081",
         "ios": "2.2081"
     },
-    "version": "v1.0.1",
-    "id": "darkping.integrated_turklist",
-    "name": "Integrated Turklist",
-    "developers": ["darkping", "hiimjasmine00"],
-    "description": "Integration for the Turkish Demonlist.",
+    "version": "v1.0.2",
+    "id": "reject.integrated_worldlist",
+    "name": "Integrated World Demonlist",
+    "developers": ["reject", "darkping", "hiimjasmine00"],
+    "description": "Integration for The World Demonlist.",
     "resources": {
         "sprites": [
             "resources/*.png"
@@ -35,9 +35,9 @@
         "geode.node-ids": ">=v1.9.0"
     },
     "links": {
-        "community": "https://discord.gg/xmSDbhCF",
-        "source": "https://github.com/darkping-dev11/IntegratedTurklist",
-        "homepage": "https://turklist.tr"
+        "community": "https://discord.gg/geometrydash",
+        "source": "https://github.com/tnwsk/IntegratedWorldlist",
+        "homepage": "https://list.smart-game.lat/"
     },
     "tags": [
         "content",

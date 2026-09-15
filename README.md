@@ -1,5 +1,5 @@
-# Integrated Turklist
-Integration for the [Turkish Demonlist](https://turklist.tr/demonlist).
+# Integrated Worldlist
+Integration for the World demon list, based on the [IntegratedTurklist](https://github.com/darkping-dev11/IntegratedTurklist)
 
 ## Features
 - A new button in the level search screen that opens the demon list
@@ -8,4 +8,4 @@ Integration for the [Turkish Demonlist](https://turklist.tr/demonlist).
 - Text on a demon's search box that states its position on the list (If on the list and the text is enabled in the mod settings)
 
 ## License
-This mod is licensed under the [MIT License](https://github.com/darkping-dev11/IntegratedTurklist/blob/main/LICENSE).
+This mod is licensed under the [MIT License](https://github.com/tnwsk/IntegratedWorldlist/blob/main/LICENSE).

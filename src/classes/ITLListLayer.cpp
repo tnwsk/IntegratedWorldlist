@@ -69,7 +69,7 @@ bool ITLListLayer::init() {
     m_countLabel->setID("level-count-label");
     addChild(m_countLabel);
 
-    m_list = GJListLayer::create(nullptr, "Turklist", { 0, 0, 0, 180 }, 356.0f, 220.0f, 0);
+    m_list = GJListLayer::create(nullptr, "World Demon List", { 0, 0, 0, 180 }, 356.0f, 220.0f, 0);
     m_list->setPosition(winSize / 2.0f - m_list->getContentSize() / 2.0f);
     m_list->setID("GJListLayer");
     addChild(m_list, 2);
@@ -128,13 +128,13 @@ bool ITLListLayer::init() {
     m_rightButton->setID("next-page-button");
     menu->addChild(m_rightButton);
 
-    m_infoButton = InfoAlertButton::create("Turklist", gd::string(listInfo.data(), listInfo.size()), 1.0f);
+    m_infoButton = InfoAlertButton::create("World Demonlist", gd::string(listInfo.data(), listInfo.size()), 1.0f);
     m_infoButton->setPosition({ 30.0f, 30.0f });
     m_infoButton->setID("info-button");
     menu->addChild(m_infoButton, 2);
 
     m_failure = [this](int code) {
-        FLAlertLayer::create(fmt::format("Load Failed ({})", code).c_str(), "Failed to load Turklist. Please try again later.", "OK")->show();
+        FLAlertLayer::create(fmt::format("Load Failed ({})", code).c_str(), "Failed to load API. Please try again later.", "OK")->show();
         m_loadingCircle->setVisible(false);
     };
 
