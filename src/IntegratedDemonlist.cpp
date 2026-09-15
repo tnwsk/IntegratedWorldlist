@@ -8,7 +8,7 @@ bool IntegratedDemonlist::demonlistLoaded = false;
 
 void IntegratedDemonlist::loadDemonlist(TaskHolder<web::WebResponse>& listener, Function<void()> success, CopyableFunction<void(int)> failure) {
     listener.spawn(
-        web::WebRequest().get("https://turklist.tr/api/v2/demons/listed/?limit=150"),
+        web::WebRequest().get("https://list.smart-game.lat/api/v2/demons/listed/"),
         [failure = std::move(failure), success = std::move(success)](web::WebResponse res) mutable {
             if (!res.ok()) return failure(res.code());
 

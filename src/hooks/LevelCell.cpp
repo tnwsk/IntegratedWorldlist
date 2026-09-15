@@ -38,7 +38,7 @@ class $modify(IDLevelCell, LevelCell) {
         loadedDemons.insert(levelID);
 
         m_fields->m_listener.spawn(
-            web::WebRequest().get(fmt::format("https://turklist.tr/api/v2/demons/listed/?level_id={}", levelID)),
+            web::WebRequest().get(fmt::format("https://list.smart-game.lat/api/levels/{}", levelID)),
             [this, levelID, levelName = std::string(level->m_levelName)](web::WebResponse res) mutable {
                 if (!res.ok()) return;
 
@@ -68,7 +68,7 @@ class $modify(IDLevelCell, LevelCell) {
         auto dailyLevel = m_level->m_dailyID.value() > 0;
         auto isWhite = dailyLevel || jasmine::setting::getValue<bool>("white-rank");
 
-        auto rankTextNode = CCLabelBMFont::create(fmt::format("#{} Turklist", position).c_str(), "chatFont.fnt");
+        auto rankTextNode = CCLabelBMFont::create(fmt::format("#{} The World Demonlist", position).c_str(), "chatFont.fnt");
         rankTextNode->setPosition({ 346.0f, m_height - 1.0f });
         rankTextNode->setAnchorPoint({ 1.0f, 1.0f });
         rankTextNode->setScale(m_compactView ? 0.45f : 0.6f);

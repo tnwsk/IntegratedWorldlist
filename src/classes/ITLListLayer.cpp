@@ -30,9 +30,9 @@ CCScene* ITLListLayer::scene() {
     return ret;
 }
 
-constexpr std::string_view listInfo = "The <cg>Turklist</c> is an <cp>ranking</c> "
-    "of all rated <cj>classic mode</c> <cr>extreme demons</c> beaten in Turkiye/Turkey.\n"
-    "It is managed by <cy>gorgun</c> and <cy>deadmino</c>.";
+constexpr std::string_view listInfo = "The <cg>World Demon List</c> is an <cp>ranking</c> "
+    "of all rated <cj>classic mode</c> <cr>extreme demons</c> beaten in The World discord server.\n"
+    "It is managed by <cy>kit</c> and <cy>nilo</c>.";
 
 bool ITLListLayer::init() {
     if (!CCLayer::init()) return false;
