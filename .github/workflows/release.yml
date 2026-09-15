@@ -23,18 +23,3 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-  publish:
-    name: Publish mod
-    runs-on: ubuntu-latest
-    needs: ['release']
-    environment:
-      name: publish
-      url: ${{ steps.mod-publish.outputs.url }}
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: hiimjasmine00/release-geode-mod/publish@main
-        id: mod-publish
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
